@@ -1,6 +1,6 @@
 package gestion_notes;
 
-public class Etudiant {
+public class Etudiant implements Comparable<Etudiant> {
 	
 	private int id;
 	private String nom;
@@ -23,4 +23,10 @@ public class Etudiant {
 		Etudiant etd=(Etudiant)obj;
 		return etd.id==this.id;
 	}
+
+	@Override
+	public int compareTo(Etudiant o) {
+		return Double.compare(this.note,o.note);
+	}
+	
 }
