@@ -15,7 +15,9 @@ public class Etudiant implements Comparable<Etudiant> {
 	public void setNote(double note) {
 		this.note = note;
 	}
-	
+	public double getNote() {
+		return note;
+	}
 	
 	@Override
 	public String toString() {

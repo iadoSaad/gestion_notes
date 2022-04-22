@@ -1,5 +1,8 @@
 package gestion_notes;
 
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,6 +18,11 @@ public class Main {
 		mesEtudiants.add(e1); mesEtudiants.add(e2); 
 		mesEtudiants.add(e3);
 		
+		Collections.sort(mesEtudiants);
+		System.out.println(mesEtudiants);
+		
+		List<Etudiant> note13=	mesEtudiants.filtrer(etd -> etd.getNote()<13);
+		System.out.println(note13);
 		
 	}
 }
