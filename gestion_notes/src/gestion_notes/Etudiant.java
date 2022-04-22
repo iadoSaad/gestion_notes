@@ -16,4 +16,11 @@ public class Etudiant {
 	public String toString() {
 		return "("+this.nom+":"+note+")";
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Etudiant)) return false;
+		Etudiant etd=(Etudiant)obj;
+		return etd.id==this.id;
+	}
 }
