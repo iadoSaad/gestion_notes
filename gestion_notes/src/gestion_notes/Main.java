@@ -8,5 +8,9 @@ public class Main {
 		e2=new Etudiant(2, "driss");
 		e3=new Etudiant(1, "youssef");
 		
+		e1.setNote(15); e2.setNote(12);
+		e3.setNote(16);
+		
+		
 	}
 }
